@@ -449,8 +449,6 @@ class HomeViewController: UIViewController {
         
     }
     
-    
-    
     @IBAction func playTrivia(_ sender: UIButton) {
         logTriviaClickEvents()
         setButtonClickCount()
