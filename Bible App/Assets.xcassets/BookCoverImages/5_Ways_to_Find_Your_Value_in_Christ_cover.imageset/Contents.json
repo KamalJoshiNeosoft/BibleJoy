@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "5_Ways_to_Find_Your_Value_in_Christ_cover.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

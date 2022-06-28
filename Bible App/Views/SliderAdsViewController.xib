@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SliderAdsViewController" customModule="Bible_Joy" customModuleProvider="target">
+            <connections>
+                <outlet property="crossButton" destination="V3Q-sv-iF9" id="aUJ-Cp-fQ6"/>
+                <outlet property="sideImages" destination="iEn-at-wQS" id="KFK-Hh-acM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="196"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3Q-sv-iF9">
+                    <rect key="frame" x="26" y="0.0" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="3cR-oH-cw6"/>
+                        <constraint firstAttribute="width" secondItem="V3Q-sv-iF9" secondAttribute="height" multiplier="1:1" id="leM-x4-E6U"/>
+                    </constraints>
+                    <state key="normal" image="img_cancel">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="crossButtonTap:" destination="-1" eventType="touchUpInside" id="SNb-HB-9Ro"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iEn-at-wQS">
+                    <rect key="frame" x="51" y="0.0" width="119" height="196"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubN-SQ-TOP">
+                    <rect key="frame" x="51" y="0.0" width="119" height="196"/>
+                    <connections>
+                        <action selector="imageTap:" destination="-1" eventType="touchUpInside" id="c2E-ag-ES6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="iEn-at-wQS" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="1Jk-5U-TsF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ubN-SQ-TOP" secondAttribute="trailing" id="3Ep-1g-ZTF"/>
+                <constraint firstItem="iEn-at-wQS" firstAttribute="leading" secondItem="V3Q-sv-iF9" secondAttribute="trailing" id="9h7-eC-X6m"/>
+                <constraint firstItem="ubN-SQ-TOP" firstAttribute="leading" secondItem="V3Q-sv-iF9" secondAttribute="trailing" id="GEX-P9-j2b"/>
+                <constraint firstItem="ubN-SQ-TOP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Itq-zc-dZt"/>
+                <constraint firstItem="ubN-SQ-TOP" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.7" id="Yiv-3T-Zc5"/>
+                <constraint firstItem="V3Q-sv-iF9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="d44-QB-HOq"/>
+                <constraint firstAttribute="trailing" secondItem="iEn-at-wQS" secondAttribute="trailing" id="hvx-9M-V9m"/>
+                <constraint firstItem="ubN-SQ-TOP" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="id6-Ed-nXP"/>
+                <constraint firstItem="iEn-at-wQS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="q4I-Ol-SBH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="146.37681159420291" y="264.50892857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_cancel" width="18" height="21"/>
+    </resources>
+</document>

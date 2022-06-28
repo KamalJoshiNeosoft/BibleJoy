@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Proxima-Nova-Bold.ttf">
+            <string>ProximaNovaA-Bold</string>
+        </array>
+        <array key="Proxima-Nova-Regular.ttf">
+            <string>ProximaNovaA-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="106" id="KGk-i7-Jjw" customClass="ChapterDetailCell" customModule="Bible_Joy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iry-Nk-Vm2" customClass="GradientUIView" customModule="Bible_Joy" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="89" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2N9-wh-cNN">
+                        <rect key="frame" x="15" y="15" width="35" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="NLL-yL-ie2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ProximaNovaA-Bold" family="Proxima Nova Alt" pointSize="22"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In the beginning god created the heaven and the earth." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="pEm-fr-6lg">
+                        <rect key="frame" x="58" y="13" width="212" height="37.5"/>
+                        <fontDescription key="fontDescription" name="ProximaNovaA-Regular" family="Proxima Nova Alt" pointSize="21"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ga4-4g-ba6">
+                        <rect key="frame" x="15" y="60.5" width="290" height="1.5"/>
+                        <color key="backgroundColor" red="0.93728381400000005" green="0.94110065700000001" blue="0.94509941340000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1.5" id="3BU-kb-Keg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hw9-Gy-U8C">
+                        <rect key="frame" x="269" y="9.5" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="uTf-p0-BL3"/>
+                            <constraint firstAttribute="width" constant="45" id="vJ1-Ll-1AP"/>
+                        </constraints>
+                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                        <state key="normal" image="Heart_unfill"/>
+                        <state key="selected" image="heart_red"/>
+                        <connections>
+                            <action selector="favButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="eLx-kU-KIz"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Iry-Nk-Vm2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2tT-UK-42o"/>
+                    <constraint firstItem="hw9-Gy-U8C" firstAttribute="centerY" secondItem="pEm-fr-6lg" secondAttribute="centerY" id="5eI-1e-4ag"/>
+                    <constraint firstItem="pEm-fr-6lg" firstAttribute="top" secondItem="2N9-wh-cNN" secondAttribute="top" constant="-2" id="5lR-BW-EDw"/>
+                    <constraint firstAttribute="trailing" secondItem="Ga4-4g-ba6" secondAttribute="trailing" constant="15" id="CAC-Ed-W3h"/>
+                    <constraint firstAttribute="trailing" secondItem="pEm-fr-6lg" secondAttribute="trailing" constant="50" id="CCK-ub-4Vq"/>
+                    <constraint firstAttribute="bottom" secondItem="Iry-Nk-Vm2" secondAttribute="bottom" id="Ccv-25-FSG"/>
+                    <constraint firstItem="pEm-fr-6lg" firstAttribute="leading" secondItem="2N9-wh-cNN" secondAttribute="trailing" constant="8" id="EyW-Yw-nvx"/>
+                    <constraint firstItem="Iry-Nk-Vm2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="G9H-Ad-Rb8"/>
+                    <constraint firstItem="Ga4-4g-ba6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="HAX-Kc-U79"/>
+                    <constraint firstItem="2N9-wh-cNN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Nxc-e9-sIG"/>
+                    <constraint firstAttribute="trailing" secondItem="hw9-Gy-U8C" secondAttribute="trailing" constant="6" id="Rcc-tx-0Lc"/>
+                    <constraint firstItem="2N9-wh-cNN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="X3n-Cs-NcG"/>
+                    <constraint firstAttribute="bottom" secondItem="Ga4-4g-ba6" secondAttribute="bottom" id="p1Z-JJ-bXJ"/>
+                    <constraint firstItem="Ga4-4g-ba6" firstAttribute="top" secondItem="pEm-fr-6lg" secondAttribute="bottom" constant="10" id="tTB-yf-FnC"/>
+                    <constraint firstAttribute="trailing" secondItem="Iry-Nk-Vm2" secondAttribute="trailing" id="wMx-qJ-k0H"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="detailLabel" destination="pEm-fr-6lg" id="SiI-Il-1Ak"/>
+                <outlet property="favButton" destination="hw9-Gy-U8C" id="gpP-p5-XSs"/>
+                <outlet property="gradientBackView" destination="Iry-Nk-Vm2" id="PD3-bs-v2K"/>
+                <outlet property="titleLabel" destination="2N9-wh-cNN" id="g9o-hK-Hhr"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="172.76785714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Heart_unfill" width="37.5" height="37.5"/>
+        <image name="heart_red" width="37.5" height="37.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

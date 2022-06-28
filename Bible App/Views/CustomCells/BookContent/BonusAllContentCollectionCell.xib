@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Proxima-Nova-Regular.ttf">
+            <string>ProximaNovaA-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BonusAllContentCollectionCell" id="gTV-IL-0wX" customClass="BonusAllContentCollectionCell" customModule="Bible_Joy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="149" height="192"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="149" height="192"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rUS-zu-zOI">
+                        <rect key="frame" x="0.0" y="0.0" width="149" height="192"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookcover" translatesAutoresizingMaskIntoConstraints="NO" id="m3v-zy-Ywr">
+                                <rect key="frame" x="0.0" y="0.0" width="149" height="142"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Bok-Ut-RLD">
+                                <rect key="frame" x="0.0" y="148" width="149" height="40"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5h-eN-8xW">
+                                        <rect key="frame" x="4" y="0.0" width="141" height="40"/>
+                                        <color key="backgroundColor" red="0.8539025187" green="0.54045873879999995" blue="0.27049002049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="4G0-ho-x9f"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ProximaNovaA-Regular" family="Proxima Nova Alt" pointSize="16"/>
+                                        <inset key="contentEdgeInsets" minX="2" minY="0.0" maxX="2" maxY="0.0"/>
+                                        <state key="normal" title="Preview">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UtP-1m-RUC">
+                                        <rect key="frame" x="2" y="0.0" width="145" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="0hU-8D-T2U"/>
+                                            <constraint firstAttribute="height" constant="40" id="Wfn-M8-Rhj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ProximaNovaA-Regular" family="Proxima Nova Alt" pointSize="16"/>
+                                        <inset key="contentEdgeInsets" minX="2" minY="0.0" maxX="2" maxY="0.0"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="x5h-eN-8xW" firstAttribute="leading" secondItem="Bok-Ut-RLD" secondAttribute="leading" constant="4" id="Let-s9-zhA"/>
+                                    <constraint firstItem="x5h-eN-8xW" firstAttribute="width" secondItem="UtP-1m-RUC" secondAttribute="width" multiplier="0.971429" id="cdc-1m-yRn"/>
+                                    <constraint firstAttribute="trailing" secondItem="x5h-eN-8xW" secondAttribute="trailing" constant="4" id="hZM-Rr-PlR"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="m3v-zy-Ywr" firstAttribute="leading" secondItem="rUS-zu-zOI" secondAttribute="leading" id="23y-cM-AI6"/>
+                            <constraint firstItem="Bok-Ut-RLD" firstAttribute="leading" secondItem="rUS-zu-zOI" secondAttribute="leading" id="6qQ-Tf-fiv"/>
+                            <constraint firstItem="m3v-zy-Ywr" firstAttribute="top" secondItem="rUS-zu-zOI" secondAttribute="top" id="BPB-Ug-XB6"/>
+                            <constraint firstAttribute="trailing" secondItem="Bok-Ut-RLD" secondAttribute="trailing" id="GFN-ED-Ec1"/>
+                            <constraint firstItem="Bok-Ut-RLD" firstAttribute="top" secondItem="m3v-zy-Ywr" secondAttribute="bottom" constant="6" id="GHY-vL-w3B"/>
+                            <constraint firstAttribute="trailing" secondItem="m3v-zy-Ywr" secondAttribute="trailing" id="qHd-3Q-isb"/>
+                            <constraint firstAttribute="bottom" secondItem="m3v-zy-Ywr" secondAttribute="bottom" constant="50" id="uOs-UM-vgC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="rUS-zu-zOI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2j6-6I-QT6"/>
+                <constraint firstItem="rUS-zu-zOI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3W5-3A-iRZ"/>
+                <constraint firstAttribute="trailing" secondItem="rUS-zu-zOI" secondAttribute="trailing" id="4xy-gY-uY4"/>
+                <constraint firstAttribute="bottom" secondItem="rUS-zu-zOI" secondAttribute="bottom" id="7iv-tb-6sA"/>
+            </constraints>
+            <size key="customSize" width="149" height="192"/>
+            <connections>
+                <outlet property="contentButton" destination="UtP-1m-RUC" id="dua-pt-4ke"/>
+                <outlet property="contentImage" destination="m3v-zy-Ywr" id="Dgw-Dh-qvN"/>
+                <outlet property="previewButton" destination="x5h-eN-8xW" id="C7V-lb-wd8"/>
+            </connections>
+            <point key="canvasLocation" x="94.927536231884062" y="176.11607142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bookcover" width="188" height="282"/>
+    </resources>
+</document>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner">
+            <connections>
+                <outlet property="addNotesButton" destination="mfU-pa-ZLN" id="lBj-Et-f2h"/>
+                <outlet property="bookmarkButton" destination="G4M-Fa-V49" id="zYT-eS-1Ok"/>
+                <outlet property="containerView" destination="rWc-Vz-gKL" id="7kH-Cr-a5M"/>
+                <outlet property="saveButton" destination="hkZ-JH-uWL" id="Vj0-qM-3pf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rWc-Vz-gKL">
+                    <rect key="frame" x="31" y="285" width="352" height="326"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytR-55-eDV">
+                            <rect key="frame" x="286" y="16" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="MVk-iV-L9X"/>
+                                <constraint firstAttribute="height" constant="50" id="PBN-yu-WuM"/>
+                            </constraints>
+                            <color key="tintColor" red="0.89019607840000003" green="0.52549019610000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" image="CloseTemplate">
+                                <color key="titleColor" red="0.89019607840000003" green="0.52549019610000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="closeButtonTapped:" destination="-1" eventType="touchUpInside" id="CRy-cu-wb0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkZ-JH-uWL" customClass="GradientButton" customModule="Bible_Joy" customModuleProvider="target">
+                            <rect key="frame" x="17.5" y="82" width="317" height="62.5"/>
+                            <color key="backgroundColor" red="0.89019607840000003" green="0.52549019610000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="Save to Favorites">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="saveFavbtnTapped:" destination="-1" eventType="touchUpInside" id="KJC-oQ-9rR"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfU-pa-ZLN" customClass="GradientButton" customModule="Bible_Joy" customModuleProvider="target">
+                            <rect key="frame" x="17.5" y="160.5" width="317" height="63"/>
+                            <color key="backgroundColor" red="0.89019607840000003" green="0.52549019610000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="Add Notes">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="addNotesBtnTapped:" destination="-1" eventType="touchUpInside" id="91D-yr-EJq"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4M-Fa-V49" customClass="GradientButton" customModule="Bible_Joy" customModuleProvider="target">
+                            <rect key="frame" x="17.5" y="239.5" width="317" height="62.5"/>
+                            <color key="backgroundColor" red="0.89019607840000003" green="0.52549019610000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="Bookmarksss">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="bookmarkTapped:" destination="-1" eventType="touchUpInside" id="csm-pw-cNe"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="mfU-pa-ZLN" firstAttribute="width" secondItem="hkZ-JH-uWL" secondAttribute="width" id="1h7-Zb-NMz"/>
+                        <constraint firstAttribute="trailing" secondItem="ytR-55-eDV" secondAttribute="trailing" constant="16" id="2K6-vD-ElO"/>
+                        <constraint firstItem="ytR-55-eDV" firstAttribute="top" secondItem="rWc-Vz-gKL" secondAttribute="top" constant="16" id="5kZ-Ai-aiC"/>
+                        <constraint firstItem="G4M-Fa-V49" firstAttribute="height" secondItem="mfU-pa-ZLN" secondAttribute="height" id="6wp-4Q-bPM"/>
+                        <constraint firstItem="G4M-Fa-V49" firstAttribute="top" secondItem="mfU-pa-ZLN" secondAttribute="bottom" constant="16" id="ERH-sp-NYM"/>
+                        <constraint firstItem="mfU-pa-ZLN" firstAttribute="top" secondItem="hkZ-JH-uWL" secondAttribute="bottom" constant="16" id="EgD-Bz-Lb0"/>
+                        <constraint firstAttribute="bottom" secondItem="G4M-Fa-V49" secondAttribute="bottom" constant="24" id="LA0-zQ-MQz"/>
+                        <constraint firstItem="hkZ-JH-uWL" firstAttribute="width" secondItem="rWc-Vz-gKL" secondAttribute="width" multiplier="0.9" id="UGn-yW-RDW"/>
+                        <constraint firstItem="G4M-Fa-V49" firstAttribute="centerX" secondItem="rWc-Vz-gKL" secondAttribute="centerX" id="WDq-BI-ZWR"/>
+                        <constraint firstItem="G4M-Fa-V49" firstAttribute="width" secondItem="mfU-pa-ZLN" secondAttribute="width" id="bUy-iu-Sf1"/>
+                        <constraint firstItem="hkZ-JH-uWL" firstAttribute="top" secondItem="ytR-55-eDV" secondAttribute="bottom" constant="16" id="ldd-9I-SRa"/>
+                        <constraint firstItem="hkZ-JH-uWL" firstAttribute="centerX" secondItem="rWc-Vz-gKL" secondAttribute="centerX" id="sQ8-wp-eRd"/>
+                        <constraint firstItem="mfU-pa-ZLN" firstAttribute="height" secondItem="hkZ-JH-uWL" secondAttribute="height" id="w32-a9-2IV"/>
+                        <constraint firstItem="mfU-pa-ZLN" firstAttribute="centerX" secondItem="rWc-Vz-gKL" secondAttribute="centerX" id="ykk-47-Vo4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.30172431648715825" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hkZ-JH-uWL" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.07" id="3Gb-Dz-1yu"/>
+                <constraint firstItem="rWc-Vz-gKL" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="dYP-UV-Q8L"/>
+                <constraint firstItem="rWc-Vz-gKL" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.85" id="kqY-XO-BHP"/>
+                <constraint firstItem="rWc-Vz-gKL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="v3S-eW-kLh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="63.768115942028992" y="63.616071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CloseTemplate" width="25" height="25"/>
+    </resources>
+</document>

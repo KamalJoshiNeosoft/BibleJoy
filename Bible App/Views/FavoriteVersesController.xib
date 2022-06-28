@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Proxima-Nova-Semibold.ttf">
+            <string>ProximaNova-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoriteVersesController" customModule="Bible_Joy" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonFavorite" destination="TUR-1t-k39" id="qT8-dV-Qol"/>
+                <outlet property="buttonNext" destination="C2J-ae-ExH" id="u3e-bK-Iz7"/>
+                <outlet property="buttonPrevious" destination="MWb-K5-0NW" id="arL-bX-nRB"/>
+                <outlet property="stackView" destination="LLI-hD-UXV" id="cba-J9-9ri"/>
+                <outlet property="tableview" destination="TNj-Q5-1xC" id="E72-7C-7aE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TNj-Q5-1xC">
+                    <rect key="frame" x="0.0" y="44" width="414" height="738"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="P3t-XR-Ctr"/>
+                        <outlet property="delegate" destination="-1" id="smt-Lx-FxK"/>
+                    </connections>
+                </tableView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="LLI-hD-UXV">
+                    <rect key="frame" x="0.0" y="792" width="414" height="70"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWb-K5-0NW">
+                            <rect key="frame" x="0.0" y="0.0" width="115.66666666666667" height="70"/>
+                            <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="18"/>
+                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="titleEdgeInsets" minX="-40" minY="40" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="33" minY="0.0" maxX="0.0" maxY="27"/>
+                            <state key="normal" title="Previous" image="double_left">
+                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="previousButtonTapped:" destination="-1" eventType="touchUpInside" id="bqe-RS-3pI"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUR-1t-k39">
+                            <rect key="frame" x="121.66666666666669" y="0.0" width="205" height="70"/>
+                            <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="18"/>
+                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="titleEdgeInsets" minX="-40" minY="40" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="66" minY="0.0" maxX="0.0" maxY="27"/>
+                            <state key="normal" title="Saved to Favorites" image="Heart_unfill">
+                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="favoriteUnfavourButtonTapped:" destination="-1" eventType="touchUpInside" id="Wjb-RT-Xit"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2J-ae-ExH">
+                            <rect key="frame" x="332.66666666666669" y="0.0" width="81.333333333333314" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="JDg-Vd-Blq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="18"/>
+                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="titleEdgeInsets" minX="-40" minY="40" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="19" minY="0.0" maxX="0.0" maxY="27"/>
+                            <state key="normal" title="Next" image="double_right">
+                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="nextButtonTapped:" destination="-1" eventType="touchUpInside" id="1sS-SR-JsW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="TUR-1t-k39" firstAttribute="height" secondItem="MWb-K5-0NW" secondAttribute="height" id="8wg-Fm-Ble"/>
+                        <constraint firstItem="C2J-ae-ExH" firstAttribute="height" secondItem="MWb-K5-0NW" secondAttribute="height" id="yWb-VI-oQl"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tmp-HX-hjU">
+                    <rect key="frame" x="47" y="862" width="320" height="0.0"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="D87-Xd-avy"/>
+                        <constraint firstAttribute="width" constant="320" id="DSo-8F-ivF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Tmp-HX-hjU" secondAttribute="bottom" id="44H-QD-OWb"/>
+                <constraint firstItem="Tmp-HX-hjU" firstAttribute="top" secondItem="LLI-hD-UXV" secondAttribute="bottom" id="7B1-SI-Buj"/>
+                <constraint firstItem="TNj-Q5-1xC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="7JF-bN-msd"/>
+                <constraint firstItem="Tmp-HX-hjU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="S75-D8-MVc"/>
+                <constraint firstItem="TNj-Q5-1xC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="axE-dd-gRn"/>
+                <constraint firstItem="LLI-hD-UXV" firstAttribute="top" secondItem="TNj-Q5-1xC" secondAttribute="bottom" constant="10" id="hVL-l9-9yM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TNj-Q5-1xC" secondAttribute="trailing" id="uKw-sY-jsL"/>
+                <constraint firstItem="LLI-hD-UXV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wDe-IJ-r9Y"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LLI-hD-UXV" secondAttribute="trailing" id="xmE-IS-RA7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="108"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Heart_unfill" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="double_left" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="double_right" width="33.333332061767578" height="33.333332061767578"/>
+    </resources>
+</document>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Proxima-Nova-Bold.ttf">
+            <string>ProximaNovaA-Bold</string>
+        </array>
+        <array key="Proxima-Nova-Semibold.ttf">
+            <string>ProximaNova-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="330" id="KGk-i7-Jjw" customClass="AnswerStatusCell" customModule="Bible_Joy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="330"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="330"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eoX-hS-y1M">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="330"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="8t2-6l-L6h">
+                                <rect key="frame" x="0.0" y="50" width="320" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="nbc-sh-buv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incorrect" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVa-3v-atI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="IDO-3l-xsN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ProximaNovaA-Bold" family="Proxima Nova Alt" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTV-eZ-PWM" userLabel="ViewAd">
+                                <rect key="frame" x="10" y="65" width="300" height="0.0"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="KDN-PC-DMa"/>
+                                    <constraint firstAttribute="width" constant="300" id="vAr-Ty-iup"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIG-lb-8XJ">
+                                <rect key="frame" x="10" y="85" width="300" height="90.5"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wkI-3C-gw5" userLabel="ViewAd">
+                                <rect key="frame" x="10" y="195.5" width="300" height="0.0"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="JNF-q4-btR"/>
+                                    <constraint firstAttribute="width" constant="300" id="Vhu-t4-eIA"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hth-r7-rui">
+                                <rect key="frame" x="10" y="215.5" width="300" height="24.5"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="20"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0S-Ih-QzL" customClass="GradientButton" customModule="Bible_Joy" customModuleProvider="target">
+                                <rect key="frame" x="15" y="260" width="290" height="50"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="TDW-g9-D2T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ProximaNovaA-Bold" family="Proxima Nova Alt" pointSize="20"/>
+                                <state key="normal" title="Next Question">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8t2-6l-L6h" secondAttribute="trailing" id="3Hd-oL-4zs"/>
+                            <constraint firstItem="hth-r7-rui" firstAttribute="leading" secondItem="DIG-lb-8XJ" secondAttribute="leading" id="7a1-vx-Oi5"/>
+                            <constraint firstItem="BVa-3v-atI" firstAttribute="top" secondItem="eoX-hS-y1M" secondAttribute="top" id="CU1-Jt-zAh"/>
+                            <constraint firstItem="JTV-eZ-PWM" firstAttribute="centerX" secondItem="eoX-hS-y1M" secondAttribute="centerX" id="DPF-jK-PUp"/>
+                            <constraint firstAttribute="bottom" secondItem="X0S-Ih-QzL" secondAttribute="bottom" constant="20" id="Gig-F0-rtT"/>
+                            <constraint firstAttribute="trailing" secondItem="DIG-lb-8XJ" secondAttribute="trailing" constant="10" id="NgO-jd-Ad6"/>
+                            <constraint firstItem="hth-r7-rui" firstAttribute="top" secondItem="wkI-3C-gw5" secondAttribute="bottom" constant="20" id="OrI-gw-S7u"/>
+                            <constraint firstItem="X0S-Ih-QzL" firstAttribute="top" secondItem="hth-r7-rui" secondAttribute="bottom" constant="20" id="PSQ-hv-3SC"/>
+                            <constraint firstItem="BVa-3v-atI" firstAttribute="leading" secondItem="eoX-hS-y1M" secondAttribute="leading" id="Y8t-Dc-ec4"/>
+                            <constraint firstItem="8t2-6l-L6h" firstAttribute="leading" secondItem="eoX-hS-y1M" secondAttribute="leading" id="bXz-3j-fSE"/>
+                            <constraint firstItem="DIG-lb-8XJ" firstAttribute="leading" secondItem="eoX-hS-y1M" secondAttribute="leading" constant="10" id="bcc-di-1rQ"/>
+                            <constraint firstItem="hth-r7-rui" firstAttribute="trailing" secondItem="DIG-lb-8XJ" secondAttribute="trailing" id="eFf-KZ-Qzl"/>
+                            <constraint firstItem="X0S-Ih-QzL" firstAttribute="leading" secondItem="eoX-hS-y1M" secondAttribute="leading" constant="15" id="gMc-NI-JJZ"/>
+                            <constraint firstAttribute="trailing" secondItem="X0S-Ih-QzL" secondAttribute="trailing" constant="15" id="h7A-D9-jfp"/>
+                            <constraint firstItem="DIG-lb-8XJ" firstAttribute="top" secondItem="JTV-eZ-PWM" secondAttribute="bottom" constant="20" id="jzh-W2-06Z"/>
+                            <constraint firstAttribute="trailing" secondItem="BVa-3v-atI" secondAttribute="trailing" id="mI3-6N-Uik"/>
+                            <constraint firstItem="wkI-3C-gw5" firstAttribute="centerX" secondItem="eoX-hS-y1M" secondAttribute="centerX" id="nSu-c2-gQO"/>
+                            <constraint firstItem="8t2-6l-L6h" firstAttribute="top" secondItem="BVa-3v-atI" secondAttribute="bottom" id="w2f-h5-rIw"/>
+                            <constraint firstItem="JTV-eZ-PWM" firstAttribute="top" secondItem="8t2-6l-L6h" secondAttribute="bottom" constant="15" id="xFO-bP-5DS"/>
+                            <constraint firstItem="wkI-3C-gw5" firstAttribute="top" secondItem="DIG-lb-8XJ" secondAttribute="bottom" constant="20" id="zVo-cf-rqv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eoX-hS-y1M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0fP-zY-rMa"/>
+                    <constraint firstAttribute="trailing" secondItem="eoX-hS-y1M" secondAttribute="trailing" id="ddp-FG-t8Q"/>
+                    <constraint firstAttribute="bottom" secondItem="eoX-hS-y1M" secondAttribute="bottom" id="puH-0Z-itP"/>
+                    <constraint firstItem="eoX-hS-y1M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="sdk-WN-Mqm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="buttonNextQuestion" destination="X0S-Ih-QzL" id="3WO-tn-0Na"/>
+                <outlet property="heightViewAdsFirst" destination="KDN-PC-DMa" id="iIZ-1P-gxG"/>
+                <outlet property="heightViewAdsSecond" destination="JNF-q4-btR" id="Ktv-GO-deo"/>
+                <outlet property="imageViewAnswer" destination="8t2-6l-L6h" id="pu1-dv-jep"/>
+                <outlet property="labelAnswerDetail" destination="hth-r7-rui" id="xJF-Wx-x84"/>
+                <outlet property="labelAnswerStatus" destination="BVa-3v-atI" id="8Hc-Zr-l1s"/>
+                <outlet property="labelExplaination" destination="DIG-lb-8XJ" id="Oma-oa-qpT"/>
+                <outlet property="viewAdsFirst" destination="JTV-eZ-PWM" id="5q7-c3-L48"/>
+                <outlet property="viewAdsSecond" destination="wkI-3C-gw5" id="Cjp-d1-XEL"/>
+            </connections>
+            <point key="canvasLocation" x="107.24637681159422" y="83.035714285714278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img1" width="400" height="200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

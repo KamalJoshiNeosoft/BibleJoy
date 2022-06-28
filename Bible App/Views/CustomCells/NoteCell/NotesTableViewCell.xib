@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Proxima-Nova-Bold.ttf">
+            <string>ProximaNovaA-Bold</string>
+        </array>
+        <array key="Proxima-Nova-Regular.ttf">
+            <string>ProximaNovaA-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="NotesTableViewCell" rowHeight="231" id="KGk-i7-Jjw" customClass="NotesTableViewCell" customModule="Bible_AppTests" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="433" height="231"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="433" height="231"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7HD-SH-FIn">
+                        <rect key="frame" x="10" y="0.0" width="413" height="231"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cly-oW-Ah9">
+                                <rect key="frame" x="10" y="10" width="393" height="18"/>
+                                <fontDescription key="fontDescription" name="ProximaNovaA-Bold" family="Proxima Nova Alt" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EV2-yu-WGT">
+                                <rect key="frame" x="10" y="38" width="393" height="50"/>
+                                <string key="text">iPhone 12 is the default iPhone that comes with a bunch of upgrades over the iPhone 11, including an improved display and faster performance. Read our review to know more.</string>
+                                <fontDescription key="fontDescription" name="ProximaNovaA-Regular" family="Proxima Nova Alt" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gig-mD-VBY">
+                                <rect key="frame" x="10" y="108" width="393" height="18"/>
+                                <fontDescription key="fontDescription" name="ProximaNovaA-Bold" family="Proxima Nova Alt" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXk-rf-zYa">
+                                <rect key="frame" x="10" y="136" width="393" height="50"/>
+                                <string key="text">iPhone 12 is the default iPhone that comes with a bunch of upgrades over the iPhone 11, including an improved display and faster performance. Read our review to know more.</string>
+                                <fontDescription key="fontDescription" name="ProximaNovaA-Regular" family="Proxima Nova Alt" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3q-7U-jED">
+                                <rect key="frame" x="0.0" y="196" width="413" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="xsB-rS-Zg6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mN-8c-f94">
+                                <rect key="frame" x="378" y="2" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lza-6n-VxZ"/>
+                                    <constraint firstAttribute="width" secondItem="2mN-8c-f94" secondAttribute="height" id="oy7-7X-YnM"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="7" minY="7" maxX="5" maxY="7"/>
+                                <state key="normal" image="cross"/>
+                                <connections>
+                                    <action selector="deleteButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cXd-9a-XZB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Gig-mD-VBY" firstAttribute="leading" secondItem="7HD-SH-FIn" secondAttribute="leading" constant="10" id="2WG-Fl-pCF"/>
+                            <constraint firstItem="2mN-8c-f94" firstAttribute="top" secondItem="7HD-SH-FIn" secondAttribute="top" constant="2" id="3LT-OL-adX"/>
+                            <constraint firstItem="EV2-yu-WGT" firstAttribute="leading" secondItem="7HD-SH-FIn" secondAttribute="leading" constant="10" id="3Uk-ts-1qR"/>
+                            <constraint firstItem="z3q-7U-jED" firstAttribute="leading" secondItem="7HD-SH-FIn" secondAttribute="leading" id="6WR-bI-2Go"/>
+                            <constraint firstAttribute="trailing" secondItem="nXk-rf-zYa" secondAttribute="trailing" constant="10" id="7me-jY-h9R"/>
+                            <constraint firstAttribute="trailing" secondItem="2mN-8c-f94" secondAttribute="trailing" constant="5" id="Jn0-wX-c8K"/>
+                            <constraint firstItem="cly-oW-Ah9" firstAttribute="leading" secondItem="7HD-SH-FIn" secondAttribute="leading" constant="10" id="O6c-k5-LXh"/>
+                            <constraint firstAttribute="trailing" secondItem="cly-oW-Ah9" secondAttribute="trailing" constant="10" id="Xn4-O8-yhg"/>
+                            <constraint firstItem="z3q-7U-jED" firstAttribute="top" secondItem="nXk-rf-zYa" secondAttribute="bottom" constant="10" id="Zzt-vS-f2T"/>
+                            <constraint firstAttribute="bottom" secondItem="z3q-7U-jED" secondAttribute="bottom" priority="250" id="agR-6k-fRH"/>
+                            <constraint firstItem="EV2-yu-WGT" firstAttribute="top" secondItem="cly-oW-Ah9" secondAttribute="bottom" constant="10" id="dQP-Ja-kL0"/>
+                            <constraint firstAttribute="trailing" secondItem="z3q-7U-jED" secondAttribute="trailing" id="h3W-PF-aZ4"/>
+                            <constraint firstItem="Gig-mD-VBY" firstAttribute="top" secondItem="EV2-yu-WGT" secondAttribute="bottom" constant="20" id="hPE-h1-Hqe"/>
+                            <constraint firstAttribute="trailing" secondItem="Gig-mD-VBY" secondAttribute="trailing" constant="10" id="kuM-Hd-tWb"/>
+                            <constraint firstAttribute="trailing" secondItem="EV2-yu-WGT" secondAttribute="trailing" constant="10" id="laq-c1-Yma"/>
+                            <constraint firstItem="nXk-rf-zYa" firstAttribute="leading" secondItem="7HD-SH-FIn" secondAttribute="leading" constant="10" id="rd5-Ay-aVd"/>
+                            <constraint firstItem="nXk-rf-zYa" firstAttribute="top" secondItem="Gig-mD-VBY" secondAttribute="bottom" constant="10" id="xME-Bk-uXa"/>
+                            <constraint firstItem="cly-oW-Ah9" firstAttribute="top" secondItem="7HD-SH-FIn" secondAttribute="top" constant="10" id="yfe-qH-pz0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="7HD-SH-FIn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="7KE-Pn-5Jh"/>
+                    <constraint firstAttribute="bottom" secondItem="7HD-SH-FIn" secondAttribute="bottom" id="AyG-MS-A0h"/>
+                    <constraint firstItem="7HD-SH-FIn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="GYu-Ws-xiZ"/>
+                    <constraint firstAttribute="trailing" secondItem="7HD-SH-FIn" secondAttribute="trailing" constant="10" id="JeG-pe-BGh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bookDescLbl" destination="EV2-yu-WGT" id="7gE-js-uQo"/>
+                <outlet property="bookTitleLbl" destination="cly-oW-Ah9" id="bVr-VU-Qrq"/>
+                <outlet property="notesDescLbl" destination="nXk-rf-zYa" id="kFn-W9-l9L"/>
+            </connections>
+            <point key="canvasLocation" x="219.56521739130437" y="167.07589285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cross" width="25" height="25"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

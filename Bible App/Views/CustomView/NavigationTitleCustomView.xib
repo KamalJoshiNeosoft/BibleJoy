@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Proxima-Nova-Bold.ttf">
+            <string>ProximaNovaA-Bold</string>
+        </array>
+        <array key="Proxima-Nova-Regular.ttf">
+            <string>ProximaNovaA-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="4ch-g3-0qU" customClass="NavigationTitleCustomView" customModule="Bible_Joy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bonus Content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRe-rl-6s5">
+                    <rect key="frame" x="0.0" y="0.0" width="181" height="50"/>
+                    <fontDescription key="fontDescription" name="ProximaNovaA-Bold" family="Proxima Nova Alt" pointSize="22"/>
+                    <color key="textColor" red="0.8539025187" green="0.54045873879999995" blue="0.27049002049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prayer Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Etq-Gh-yMQ">
+                    <rect key="frame" x="189" y="0.0" width="68.5" height="12.5"/>
+                    <fontDescription key="fontDescription" name="ProximaNovaA-Regular" family="Proxima Nova Alt" pointSize="11"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200Pts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5PI-lD-Ff0">
+                    <rect key="frame" x="198.5" y="12.5" width="49.5" height="17"/>
+                    <fontDescription key="fontDescription" name="ProximaNovaA-Bold" family="Proxima Nova Alt" pointSize="15"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fBj-s6-ao0"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="JRe-rl-6s5" firstAttribute="leading" secondItem="fBj-s6-ao0" secondAttribute="leading" id="BpA-Hn-LTQ"/>
+                <constraint firstItem="5PI-lD-Ff0" firstAttribute="width" secondItem="Etq-Gh-yMQ" secondAttribute="width" multiplier="0.725" id="EZI-mZ-Pnr"/>
+                <constraint firstItem="fBj-s6-ao0" firstAttribute="trailing" secondItem="Etq-Gh-yMQ" secondAttribute="trailing" constant="2.5" id="QLF-cy-QbM"/>
+                <constraint firstItem="Etq-Gh-yMQ" firstAttribute="leading" secondItem="JRe-rl-6s5" secondAttribute="trailing" constant="8" id="kGj-CX-EO1"/>
+                <constraint firstItem="Etq-Gh-yMQ" firstAttribute="top" secondItem="fBj-s6-ao0" secondAttribute="top" id="lME-Kk-drm"/>
+                <constraint firstItem="JRe-rl-6s5" firstAttribute="bottom" secondItem="fBj-s6-ao0" secondAttribute="bottom" id="oO3-FR-0AL"/>
+                <constraint firstItem="5PI-lD-Ff0" firstAttribute="top" secondItem="Etq-Gh-yMQ" secondAttribute="bottom" id="ui5-GQ-fgk"/>
+                <constraint firstItem="5PI-lD-Ff0" firstAttribute="centerX" secondItem="Etq-Gh-yMQ" secondAttribute="centerX" id="xq7-37-DhY"/>
+                <constraint firstItem="JRe-rl-6s5" firstAttribute="top" secondItem="fBj-s6-ao0" secondAttribute="top" id="zWl-da-IKt"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="subscriptLabel" destination="5PI-lD-Ff0" id="Ukd-YN-rFP"/>
+                <outlet property="superscriptLabel" destination="Etq-Gh-yMQ" id="Mzr-cy-gvf"/>
+                <outlet property="titleLabel" destination="JRe-rl-6s5" id="yTt-Eh-3RP"/>
+            </connections>
+            <point key="canvasLocation" x="-127.5" y="-188.75"/>
+        </view>
+    </objects>
+</document>

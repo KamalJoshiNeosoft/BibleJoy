@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Proxima-Nova-Regular.ttf">
+            <string>ProximaNovaA-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BibleCollectionViewCell" customModule="Bible_Joy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="35"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="35"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLU-S9-LaM">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="35"/>
+                        <color key="backgroundColor" red="0.8539025187" green="0.54045873879999995" blue="0.27049002049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genesis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4d8-aB-cLM">
+                        <rect key="frame" x="5" y="8" width="60.5" height="19"/>
+                        <fontDescription key="fontDescription" name="ProximaNovaA-Regular" family="Proxima Nova Alt" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="0.94904869790000002" green="0.95286518340000004" blue="0.95686417820000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="YLU-S9-LaM" secondAttribute="bottom" id="Fpd-vw-aqx"/>
+                <constraint firstItem="YLU-S9-LaM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="H7R-5g-rMc"/>
+                <constraint firstItem="YLU-S9-LaM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="N1B-JQ-UQq"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4d8-aB-cLM" secondAttribute="trailing" constant="5" id="QLo-0u-Mpb"/>
+                <constraint firstItem="4d8-aB-cLM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="VmL-Xf-q0h"/>
+                <constraint firstItem="4d8-aB-cLM" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="aej-l6-tu3"/>
+                <constraint firstAttribute="trailing" secondItem="YLU-S9-LaM" secondAttribute="trailing" id="jmd-rN-9h1"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="3"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="selectedBackgroundView" destination="YLU-S9-LaM" id="7yV-zO-sNS"/>
+                <outlet property="titleLabel" destination="4d8-aB-cLM" id="0yv-lK-EyV"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="150.33482142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>

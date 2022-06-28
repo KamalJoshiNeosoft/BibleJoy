@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "10_Ways_to_Start_your_Day_with_the_Lord_cover.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
