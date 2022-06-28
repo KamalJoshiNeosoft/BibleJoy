@@ -446,7 +446,6 @@ class HomeViewController: UIViewController {
                 self.view.makeToast("There are no browser application installed", duration: 2.0, position: .bottom, style: style)
             }
         }
-        
     }
     
     @IBAction func playTrivia(_ sender: UIButton) {
